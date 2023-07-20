@@ -8,7 +8,7 @@ export default function TodoIndex() {
   // !!重要!! 資料一定要有id，因為key要用id才可以作新增、修改、刪除，這是react中map時需要的
   const [todos, setTodos] = useState([
     { id: 1, text: '買牛奶', completed: false, editing: false },
-    { id: 2, text: '學react', completed: true, editing: true },
+    { id: 2, text: '學react', completed: true, editing: false },
   ])
 
   // 呈現過濾用的狀態，只有三種類型 type = '所有' | '進行中' | '已完成'

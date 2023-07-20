@@ -21,14 +21,21 @@ export default function Item({
             handleToggleCompleted(id)
           }}
         />
-        {text}
-        <button
+        {/* 改為 滑鼠雙點按後 (Double Click) 編輯 */}
+        <span
+          onDoubleClick={() => {
+            handleToggleEditing(id)
+          }}
+        >
+          {text}
+        </span>
+        {/* <button
           onClick={() => {
             handleToggleEditing(id)
           }}
         >
           編輯
-        </button>
+        </button> */}
         <button
           onClick={() => {
             // setTodos(remove(todos, id))
